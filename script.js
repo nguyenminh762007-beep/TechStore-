@@ -204,6 +204,159 @@ const products = [
         price: 450000,
         image: "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?auto=format&fit=crop&w=700&q=80",
         description: "Giảm nhiệt, hỗ trợ góc đặt thoải mái."
+    },
+    {
+        id: 27,
+        name: "Tai nghe True Wireless",
+        category: "Phụ kiện",
+        subcategory: "Tai nghe",
+        price: 1290000,
+        image: "https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?auto=format&fit=crop&w=700&q=80",
+        description: "Kết nối nhanh, âm bass mạnh và chống ồn."
+    },
+    {
+        id: 28,
+        name: "Cáp Lightning to USB",
+        category: "Phụ kiện",
+        subcategory: "Cáp sạc",
+        price: 160000,
+        image: "https://images.unsplash.com/photo-1583863788434-e58a36330cf0?auto=format&fit=crop&w=700&q=80",
+        description: "Cáp truyền dữ liệu và sạc cho thiết bị Apple."
+    },
+    {
+        id: 29,
+        name: "Cáp sạc 2 đầu USB-C",
+        category: "Phụ kiện",
+        subcategory: "Cáp sạc",
+        price: 210000,
+        image: "https://images.unsplash.com/photo-1615526675159-e248c3021d3f?auto=format&fit=crop&w=700&q=80",
+        description: "Cáp bện chắc, hỗ trợ sạc nhanh 2 đầu USB-C."
+    },
+    {
+        id: 30,
+        name: "Pin sạc dự phòng 20.000mAh",
+        category: "Phụ kiện",
+        subcategory: "Pin sạc",
+        price: 790000,
+        image: "https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?auto=format&fit=crop&w=700&q=80",
+        description: "Dung lượng lớn, sạc được nhiều lần cho điện thoại."
+    },
+    {
+        id: 31,
+        name: "Pin sạc mini 5.000mAh",
+        category: "Phụ kiện",
+        subcategory: "Pin sạc",
+        price: 390000,
+        image: "https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?auto=format&fit=crop&w=700&q=80",
+        description: "Nhỏ gọn, dễ mang theo khi ra ngoài."
+    },
+    {
+        id: 32,
+        name: "Ốp lưng trong suốt",
+        category: "Phụ kiện",
+        subcategory: "Ốp lưng",
+        price: 190000,
+        image: "https://images.unsplash.com/photo-1603313011101-574fd5e3c8da?auto=format&fit=crop&w=700&q=80",
+        description: "Giữ nguyên vẻ đẹp của máy, chống ố vàng."
+    },
+    {
+        id: 33,
+        name: "Ốp lưng chống sốc",
+        category: "Phụ kiện",
+        subcategory: "Ốp lưng",
+        price: 280000,
+        image: "https://images.unsplash.com/photo-1603313011101-574fd5e3c8da?auto=format&fit=crop&w=700&q=80",
+        description: "Viền bọc chắc chắn, bảo vệ máy khỏi va đập."
+    },
+    {
+        id: 34,
+        name: "Kính cường lực chống nhìn trộm",
+        category: "Phụ kiện",
+        subcategory: "Dán màn hình",
+        price: 220000,
+        image: "https://images.unsplash.com/photo-1565849904461-04a58ad377e0?auto=format&fit=crop&w=700&q=80",
+        description: "Bảo vệ màn hình và giữ riêng tư khi sử dụng."
+    },
+    {
+        id: 35,
+        name: "Dán màn hình kính nano",
+        category: "Phụ kiện",
+        subcategory: "Dán màn hình",
+        price: 180000,
+        image: "https://images.unsplash.com/photo-1565849904461-04a58ad377e0?auto=format&fit=crop&w=700&q=80",
+        description: "Bề mặt mượt, độ trong cao và chống trầy tốt."
+    },
+    {
+        id: 36,
+        name: "Bộ kit chân máy vlog",
+        category: "Phụ kiện",
+        subcategory: "Máy ảnh",
+        price: 690000,
+        image: "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=700&q=80",
+        description: "Chân máy kèm remote tiện dụng để quay vlog."
+    },
+    {
+        id: 37,
+        name: "Túi đựng máy ảnh",
+        category: "Phụ kiện",
+        subcategory: "Máy ảnh",
+        price: 480000,
+        image: "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=700&q=80",
+        description: "Túi đệm mềm, bảo vệ máy ảnh và lens."
+    },
+    {
+        id: 38,
+        name: "Lót chuột kích thước lớn",
+        category: "Phụ kiện",
+        subcategory: "Chuột bàn phím",
+        price: 190000,
+        image: "https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=700&q=80",
+        description: "Bề mặt di chuột mượt, nền chống trượt."
+    },
+    {
+        id: 39,
+        name: "Bàn phím không dây mini",
+        category: "Phụ kiện",
+        subcategory: "Chuột bàn phím",
+        price: 490000,
+        image: "https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=700&q=80",
+        description: "Thiết kế gọn nhẹ, kết nối không dây ổn định."
+    },
+    {
+        id: 40,
+        name: "Giá đỡ điện thoại đa năng",
+        category: "Phụ kiện",
+        subcategory: "Phụ kiện điện thoại",
+        price: 170000,
+        image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=700&q=80",
+        description: "Dùng trên bàn làm việc để xem video và họp."
+    },
+    {
+        id: 41,
+        name: "PopSocket đeo điện thoại",
+        category: "Phụ kiện",
+        subcategory: "Phụ kiện điện thoại",
+        price: 120000,
+        image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=700&q=80",
+        description: "Giúp cầm máy chắc tay và làm giá đỡ."
+    },
+    {
+        id: 42,
+        name: "Túi chống sốc laptop",
+        category: "Phụ kiện",
+        subcategory: "Laptop",
+        price: 590000,
+        image: "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=700&q=80",
+        description: "Lớp đệm dày, bảo vệ laptop khi di chuyển."
+    },
+    {
+        id: 43,
+        name: "Hub USB-C 7 trong 1",
+        category: "Phụ kiện",
+        subcategory: "Laptop",
+        price: 790000,
+        image: "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?auto=format&fit=crop&w=700&q=80",
+        description: "Mở rộng cổng USB, HDMI, thẻ nhớ và sạc."
     }
 ];
 
@@ -219,6 +372,98 @@ let selectedCategory = "Tất cả";
 
 const money = value =>
     value.toLocaleString("vi-VN") + " ₫";
+
+const phoneCaseVisual = `
+    <svg class="phone-case-visual" viewBox="0 0 220 150" role="img"
+         aria-label="Ốp lưng điện thoại">
+        <rect x="77" y="10" width="66" height="130" rx="14"
+              fill="#f8faff" stroke="#3157d5" stroke-width="5"/>
+        <rect x="85" y="20" width="50" height="110" rx="8"
+              fill="#dce6ff" stroke="#3157d5" stroke-width="3"/>
+        <circle cx="110" cy="18" r="3" fill="#3157d5"/>
+        <circle cx="100" cy="43" r="13" fill="#3157d5"/>
+        <circle cx="126" cy="43" r="13" fill="#3157d5" opacity=".55"/>
+        <circle cx="113" cy="69" r="13" fill="#3157d5" opacity=".78"/>
+        <path d="M92 111h36" stroke="#3157d5" stroke-width="5" stroke-linecap="round"/>
+    </svg>
+`;
+
+function getAccessoryVisual(product) {
+    if (product.subcategory === "Ốp lưng") return phoneCaseVisual;
+
+    const visuals = {
+        "Tai nghe": `
+            <svg class="phone-case-visual" viewBox="0 0 220 150" role="img" aria-label="${product.name}">
+                <path d="M65 79V67c0-25 18-42 45-42s45 17 45 42v12" fill="none"
+                      stroke="#3157d5" stroke-width="12" stroke-linecap="round"/>
+                <rect x="52" y="72" width="28" height="48" rx="14" fill="#18233b"/>
+                <rect x="140" y="72" width="28" height="48" rx="14" fill="#18233b"/>
+                <rect x="58" y="82" width="16" height="28" rx="8" fill="#3157d5"/>
+                <rect x="146" y="82" width="16" height="28" rx="8" fill="#3157d5"/>
+            </svg>`,
+        "Cáp sạc": `
+            <svg class="phone-case-visual" viewBox="0 0 220 150" role="img" aria-label="${product.name}">
+                <path d="M30 112c20-10 41-8 58 4 29 20 62 1 102-23" fill="none"
+                      stroke="#3157d5" stroke-width="10" stroke-linecap="round"/>
+                <rect x="18" y="96" width="38" height="28" rx="6" fill="#18233b"/>
+                <rect x="167" y="70" width="38" height="28" rx="6" fill="#18233b"/>
+                <path d="M56 101h18v18H56zm111-26h18v18h-18z" fill="#f4f7ff"/>
+            </svg>`,
+        "Pin sạc": `
+            <svg class="phone-case-visual" viewBox="0 0 220 150" role="img" aria-label="${product.name}">
+                <rect x="65" y="24" width="90" height="102" rx="16" fill="#eef3ff"
+                      stroke="#3157d5" stroke-width="5"/>
+                <rect x="96" y="15" width="28" height="12" rx="5" fill="#3157d5"/>
+                <path d="M112 46l-18 38h16l-9 30 31-43h-17l10-25z" fill="#3157d5"/>
+            </svg>`,
+        "Dán màn hình": `
+            <svg class="phone-case-visual" viewBox="0 0 220 150" role="img" aria-label="${product.name}">
+                <rect x="78" y="10" width="64" height="130" rx="12" fill="#eef3ff"
+                      stroke="#3157d5" stroke-width="5"/>
+                <rect x="87" y="20" width="46" height="110" rx="7" fill="#cfe3ff"/>
+                <path d="M108 42l18 18-18 18-18-18z" fill="#fff" opacity=".9"/>
+                <path d="M96 123h28" stroke="#3157d5" stroke-width="4" stroke-linecap="round"/>
+            </svg>`,
+        "Máy ảnh": `
+            <svg class="phone-case-visual" viewBox="0 0 220 150" role="img" aria-label="${product.name}">
+                <rect x="38" y="42" width="144" height="82" rx="10" fill="#18233b"/>
+                <rect x="70" y="27" width="52" height="24" rx="6" fill="#3157d5"/>
+                <circle cx="110" cy="84" r="31" fill="#eef3ff" stroke="#3157d5" stroke-width="6"/>
+                <circle cx="110" cy="84" r="15" fill="#3157d5"/>
+                <circle cx="161" cy="56" r="6" fill="#ffd166"/>
+            </svg>`,
+        "Chuột bàn phím": `
+            <svg class="phone-case-visual" viewBox="0 0 220 150" role="img" aria-label="${product.name}">
+                <rect x="30" y="48" width="160" height="74" rx="10" fill="#eef3ff"
+                      stroke="#3157d5" stroke-width="5"/>
+                <g fill="#3157d5">
+                    <rect x="44" y="62" width="12" height="12" rx="3"/>
+                    <rect x="62" y="62" width="12" height="12" rx="3"/>
+                    <rect x="80" y="62" width="12" height="12" rx="3"/>
+                    <rect x="98" y="62" width="12" height="12" rx="3"/>
+                    <rect x="116" y="62" width="12" height="12" rx="3"/>
+                    <rect x="134" y="62" width="12" height="12" rx="3"/>
+                    <rect x="152" y="62" width="12" height="12" rx="3"/>
+                    <rect x="61" y="91" width="98" height="12" rx="6"/>
+                </g>
+            </svg>`,
+        "Phụ kiện điện thoại": `
+            <svg class="phone-case-visual" viewBox="0 0 220 150" role="img" aria-label="${product.name}">
+                <rect x="72" y="18" width="76" height="114" rx="12" fill="#eef3ff"
+                      stroke="#3157d5" stroke-width="5"/>
+                <circle cx="110" cy="48" r="15" fill="#3157d5"/>
+                <path d="M110 63v48M86 88h48" stroke="#3157d5" stroke-width="8" stroke-linecap="round"/>
+            </svg>`,
+        "Laptop": `
+            <svg class="phone-case-visual" viewBox="0 0 220 150" role="img" aria-label="${product.name}">
+                <rect x="47" y="24" width="126" height="82" rx="8" fill="#18233b"/>
+                <rect x="57" y="34" width="106" height="62" rx="4" fill="#eef3ff"/>
+                <path d="M29 116h162l-12 16H41z" fill="#3157d5"/>
+            </svg>`
+    };
+
+    return visuals[product.subcategory] || visuals["Phụ kiện điện thoại"];
+}
 
 function getProductPrice(product, storage) {
     return product.price +
@@ -301,7 +546,9 @@ function renderProducts() {
         filtered.map(product => `
             <article class="product-card">
                 <div class="product-image">
-                    <img src="${product.image}" alt="${product.name}" loading="lazy">
+                    ${product.id >= 27
+                        ? getAccessoryVisual(product)
+                        : `<img src="${product.image}" alt="${product.name}" loading="lazy">`}
                 </div>
                 <h3>${product.name}</h3>
                 <p class="description">${product.description}</p>
@@ -477,7 +724,9 @@ function openAccessoryModal(subcategory = null) {
     productList.innerHTML = filteredProducts.map(product => `
         <article class="accessory-modal-card">
             <div class="product-image">
-                <img src="${product.image}" alt="${product.name}" loading="lazy">
+                ${product.id >= 27
+                    ? getAccessoryVisual(product)
+                    : `<img src="${product.image}" alt="${product.name}" loading="lazy">`}
             </div>
             <h3>${product.name}</h3>
             <p class="description">${product.description}</p>

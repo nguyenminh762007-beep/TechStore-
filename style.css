@@ -238,6 +238,12 @@ button {
     object-fit: cover;
 }
 
+.phone-case-icon svg {
+    width: 46px;
+    height: 46px;
+    display: block;
+}
+
 .accessory-modal[hidden] {
     display: none;
 }
@@ -415,6 +421,12 @@ body.modal-open {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.phone-case-visual {
+    width: 100%;
+    height: 100%;
+    display: block;
 }
 
 .product-card h3 {
