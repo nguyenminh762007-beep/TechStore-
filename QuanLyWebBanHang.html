@@ -9,7 +9,10 @@
 </head>
 <body>
     <header>
-        <a href="#" class="logo">TechStore<span>.</span></a>
+        <a href="#home" class="logo" aria-label="TechStore - Trang chủ">
+            <img class="logo-image" src="assets/techstore-logo.png"
+                 alt="TechStore - Mua sắm công nghệ dễ dàng">
+        </a>
         <nav>
             <a href="#home">Trang chủ</a>
             <a href="#products">Sản phẩm</a>
@@ -34,6 +37,72 @@
             <div class="hero-icon">💻</div>
         </section>
 
+        <section class="accessory-section" aria-labelledby="accessory-title">
+            <div class="accessory-heading">
+                <h2 id="accessory-title">Sắm thêm phụ kiện chất lượng</h2>
+                <button class="accessory-view-all" type="button" data-show-accessories>
+                    Xem tất cả <span aria-hidden="true">›</span>
+                </button>
+            </div>
+
+            <div class="accessory-grid">
+                <button class="accessory-card" type="button" data-accessory="Tai nghe">
+                    <span class="accessory-icon" aria-hidden="true">
+                        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&amp;fit=crop&amp;w=150&amp;q=80" alt="">
+                    </span>
+                    <span>Phụ kiện Apple</span>
+                </button>
+                <button class="accessory-card" type="button" data-accessory="Cáp sạc">
+                    <span class="accessory-icon" aria-hidden="true">
+                        <img src="https://images.unsplash.com/photo-1583863788434-e58a36330cf0?auto=format&amp;fit=crop&amp;w=150&amp;q=80" alt="">
+                    </span>
+                    <span>Cáp, sạc</span>
+                </button>
+                <button class="accessory-card" type="button" data-accessory="Pin sạc">
+                    <span class="accessory-icon" aria-hidden="true">
+                        <img src="https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?auto=format&amp;fit=crop&amp;w=150&amp;q=80" alt="">
+                    </span>
+                    <span>Pin sạc dự phòng</span>
+                </button>
+                <button class="accessory-card" type="button" data-accessory="Ốp lưng">
+                    <span class="accessory-icon" aria-hidden="true">
+                        <img src="https://images.unsplash.com/photo-1603313011101-574fd5e3c8da?auto=format&amp;fit=crop&amp;w=150&amp;q=80" alt="">
+                    </span>
+                    <span>Ốp lưng - Bao da</span>
+                </button>
+                <button class="accessory-card" type="button" data-accessory="Dán màn hình">
+                    <span class="accessory-icon" aria-hidden="true">
+                        <img src="https://images.unsplash.com/photo-1556656793-08538906a9f8?auto=format&amp;fit=crop&amp;w=150&amp;q=80" alt="">
+                    </span>
+                    <span>Dán màn hình</span>
+                </button>
+                <button class="accessory-card" type="button" data-accessory="Máy ảnh">
+                    <span class="accessory-icon" aria-hidden="true">
+                        <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&amp;fit=crop&amp;w=150&amp;q=80" alt="">
+                    </span>
+                    <span>Máy ảnh</span>
+                </button>
+                <button class="accessory-card" type="button" data-accessory="Chuột bàn phím">
+                    <span class="accessory-icon" aria-hidden="true">
+                        <img src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&amp;fit=crop&amp;w=150&amp;q=80" alt="">
+                    </span>
+                    <span>Chuột, bàn phím</span>
+                </button>
+                <button class="accessory-card" type="button" data-accessory="Phụ kiện điện thoại">
+                    <span class="accessory-icon" aria-hidden="true">
+                        <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&amp;fit=crop&amp;w=150&amp;q=80" alt="">
+                    </span>
+                    <span>Phụ kiện điện thoại</span>
+                </button>
+                <button class="accessory-card" type="button" data-accessory="Laptop">
+                    <span class="accessory-icon" aria-hidden="true">
+                        <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&amp;fit=crop&amp;w=150&amp;q=80" alt="">
+                    </span>
+                    <span>Phụ kiện Laptop</span>
+                </button>
+            </div>
+        </section>
+
         <section class="products-section" id="products">
             <div class="section-heading">
                 <div>
@@ -51,7 +120,8 @@
             <div class="categories">
                 <button class="category active" data-category="Tất cả">Tất cả</button>
                 <button class="category" data-category="Laptop">Laptop</button>
-                <button class="category" data-category="Điện thoại">Điện thoại</button>
+                <button class="category" data-category="Android">Android</button>
+                <button class="category" data-category="iPhone">iPhone</button>
                 <button class="category" data-category="Phụ kiện">Phụ kiện</button>
             </div>
 
@@ -65,9 +135,25 @@
         <h2>TechStore.</h2>
         <p>Cửa hàng công nghệ dành cho mọi người.</p>
         <p>© 2026 TechStore - Bài tập môn Phát triển ứng dụng web.</p>
+        <p><a href="#home">← Về trang chủ</a></p>
     </footer>
 
     <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <div class="accessory-modal" id="accessory-modal" hidden>
+        <div class="accessory-modal-backdrop" data-close-accessories></div>
+        <section class="accessory-modal-dialog" role="dialog"
+            aria-modal="true" aria-labelledby="accessory-modal-title">
+            <div class="accessory-modal-heading">
+                <div>
+                    <p class="eyebrow">DANH MỤC PHỤ KIỆN</p>
+                    <h2 id="accessory-modal-title">Phụ kiện</h2>
+                </div>
+                <button class="accessory-modal-close" type="button"
+                    data-close-accessories aria-label="Đóng">×</button>
+            </div>
+            <div class="accessory-modal-products" id="accessory-modal-products"></div>
+        </section>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

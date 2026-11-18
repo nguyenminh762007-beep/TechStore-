@@ -34,29 +34,8 @@ footer{background:#222;color:white;text-align:center;padding:15px}
 
 <h2 style="text-align:center">SẢN PHẨM NỔI BẬT</h2>
 
-<div class="container" id="products">
-
-<div class="product">
-<img src="https://picsum.photos/300/200?1">
-<h3>Áo thun</h3>
-<p>150.000đ</p>
-<button onclick="addCart('Áo thun')">Mua ngay</button>
-</div>
-
-<div class="product">
-<img src="https://picsum.photos/300/200?2">
-<h3>Giày thể thao</h3>
-<p>450.000đ</p>
-<button onclick="addCart('Giày thể thao')">Mua ngay</button>
-</div>
-
-<div class="product">
-<img src="https://picsum.photos/300/200?3">
-<h3>Balo</h3>
-<p>250.000đ</p>
-<button onclick="addCart('Balo')">Mua ngay</button>
-</div>
-
+<div class="container" id="products" aria-live="polite">
+    Đang tải sản phẩm từ database...
 </div>
 
 <h3 style="text-align:center" id="cart">Giỏ hàng: 0 sản phẩm</h3>
@@ -68,6 +47,61 @@ footer{background:#222;color:white;text-align:center;padding:15px}
 
 <script>
 let cart = 0;
+const productsContainer = document.getElementById("products");
+const productImages = {
+    "Áo thun": "https://picsum.photos/300/200?1",
+    "Giày thể thao": "https://picsum.photos/300/200?2",
+    "Balo": "https://picsum.photos/300/200?3"
+};
+
+function renderProducts(products){
+    productsContainer.replaceChildren();
+
+    if (products.length === 0) {
+        productsContainer.textContent = "Chưa có sản phẩm trong database.";
+        return;
+    }
+
+    for (const product of products) {
+        const card = document.createElement("div");
+        card.className = "product";
+
+        const image = document.createElement("img");
+        image.src = productImages[product.name] ||
+            "https://picsum.photos/300/200";
+        image.alt = product.name;
+
+        const name = document.createElement("h3");
+        name.textContent = product.name;
+
+        const price = document.createElement("p");
+        price.textContent =
+            Number(product.price).toLocaleString("vi-VN") + "đ";
+
+        const button = document.createElement("button");
+        button.textContent = "Mua ngay";
+        button.addEventListener("click", () => addCart(product.name));
+
+        card.append(image, name, price, button);
+        productsContainer.append(card);
+    }
+}
+
+async function loadProducts(){
+    try {
+        const response = await fetch("/api/products");
+        const result = await response.json();
+        if (!response.ok || !result.success) {
+            throw new Error(result.message || "Không thể tải sản phẩm.");
+        }
+
+        renderProducts(result.data);
+    } catch (error) {
+        console.error("Lỗi tải sản phẩm:", error);
+        productsContainer.textContent =
+            "Không thể tải sản phẩm từ SQL Server. Hãy kiểm tra backend.";
+    }
+}
 
 function addCart(name){
 cart++;
@@ -75,6 +109,8 @@ document.getElementById("cart").innerText =
 "Giỏ hàng: " + cart + " sản phẩm";
 alert("Đã thêm " + name + " vào giỏ hàng!");
 }
+
+loadProducts();
 </script>
 
 </body>
